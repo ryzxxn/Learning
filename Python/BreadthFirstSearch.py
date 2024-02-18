@@ -21,7 +21,7 @@ def movegen(current_node):
     open.pop(0) #pop first node in the open list
 
     # Explore children
-    if current_node in tree:
+    if current_node not in open or close or current_node in tree:
         open.extend(tree[current_node])
         active_node = open[len(open)-1] #set active node as last node in open list
 
@@ -33,10 +33,15 @@ def Goal_test(current_node, target_node):
         movegen(current_node)
 
 # Perform BFS search
-while open:
+while open and goal_node in tree:
     if goal_node in close:
         break  # Exit the loop when the goal is found
+
     Goal_test(open[0], goal_node)
 
+
 close.reverse()
-print("CLOSED LIST:", close)
+if close:
+    print("Search Sequence:", close)
+else:
+    print("Goal Dosen't exist")
