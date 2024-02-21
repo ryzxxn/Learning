@@ -8,40 +8,37 @@ tree = {
     'G': {'I'},
 }
 
-goal_node = 'F'
+goal_nodes = ['D', 'G']  
 first_node = 'A'
 active_node = first_node
 
-open = [first_node]
-close = []
+open_list = [first_node]
+close_list = []
 
 def movegen(current_node):
     global active_node
-    close.insert(0, current_node)
-    open.pop(0) #pop first node in the open list
+    close_list.insert(0, current_node)
+    open_list.pop(0)  #pop first node in the open list
 
-    # Explore children
-    if current_node not in open or close or current_node in tree:
-        open.extend(tree[current_node])
-        active_node = open[len(open)-1] #set active node as last node in open list
+    #Explore children
+    if current_node in tree:
+        open_list.extend(tree[current_node])
+        active_node = open_list[len(open_list) - 1]  #set active node as the last node in the open list
 
-def Goal_test(current_node, target_node):
-    if current_node == target_node:
-        close.insert(0,current_node) #add current node as last node in the sequence
-        print("GOAL FOUND")
+def Goal_test(current_node, target_nodes):
+    if current_node in target_nodes:
+        close_list.insert(0, current_node)  #add the current node as the last node in the sequence
+        print("GOAL FOUND:", current_node)
+        target_nodes.remove(current_node)  # remove the found goal node from the list
     else:
         movegen(current_node)
 
-# Perform BFS search
-while open and goal_node in tree:
-    if goal_node in close:
-        break  # Exit the loop when the goal is found
+# Perform BFS search for multiple goal nodes
+while open_list and goal_nodes:
+    Goal_test(open_list[0], goal_nodes)
 
-    Goal_test(open[0], goal_node)
-
-
-close.reverse()
-if close:
-    print("Search Sequence:", close)
+close_list.reverse()
+if close_list:
+    print("Search Sequence:", close_list)
 else:
-    print("Goal Dosen't exist")
+    print("Goal Doesn't exist")
