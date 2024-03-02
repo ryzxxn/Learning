@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+.canvas{
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.player{
+    background-color: red;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.wall{
+    background-color: black;
+    height: 400px;
+    width: 20px;
+}
+.goal{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 400px;
+    right: 60px;
+}

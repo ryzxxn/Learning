@@ -1,0 +1,19 @@
+.main{
+  background-color: rgb(124, 124, 124);
+  height: 100vh;
+}
+
+.player{
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+}
+
+.collider{
+  background-color: red;
+  height: 5rem;
+  width: 10rem;
+  position: absolute;
+}
