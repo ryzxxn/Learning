@@ -1,0 +1,15 @@
+{
+  "name": "socketio",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "socketS": "nodemon server.js",
+    "socketC": "nodemon client.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
+  }
+}
