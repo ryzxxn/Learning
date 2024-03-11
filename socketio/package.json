@@ -1,12 +1,17 @@
 {
   "name": "socketio",
-  "private": false,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
   "scripts": {
-    "socketS": "nodemon server.js",
-    "socketC": "nodemon client.js"
+    "socketServer": "nodemon server.js",
+    "socketClient": "nodemon client.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "nodemon": "^3.1.0",
     "socket.io": "^4.7.4",

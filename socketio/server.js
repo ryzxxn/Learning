@@ -5,10 +5,12 @@ const io = require('socket.io')(3000, {
 })
 
 io.on('connection',socket => {
-  console.log(socket.id + "Connected");
-
+  console.log("User: "+ socket.id +" "+"Connected");
   socket.on('message', (message) => {
-      socket.broadcast.emit('server-message', message)
-      console.log(message);
+    console.log(socket.id + ": " + message);
+
+    if (message) {
+      io.emit('group-chat', message)
+    }
   })
 })
