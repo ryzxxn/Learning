@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+.drag{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.drag1{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.parent{
+    background-color: grey;
+    height: 100vh;
+    width: 1000vw;
+}

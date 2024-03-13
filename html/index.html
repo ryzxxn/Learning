@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Page Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="parent">
+        <div draggable="true" class="drag" ondragstart="drag(event)"></div>
+        <div draggable="true" class="drag1" ondragstart="drag(event)"></div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.id);
+        }
+    </script>
+    <script src="your-script.js" async defer></script>
+</body>
+</html>
