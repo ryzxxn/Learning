@@ -16,7 +16,7 @@ async function wakeup() {
 }
 
 // Define the interval in milliseconds (14 minutes = 840000 milliseconds)
-const interval = 10*60*1000;
+const interval = 60*1000;
 
 // Execute the function initially
 wakeup();
