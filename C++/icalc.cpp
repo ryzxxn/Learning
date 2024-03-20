@@ -8,9 +8,9 @@ int main() {
     const int correctionFactor = 50; // Correction Factor
 
     // Input variables
-    int currentSugarLevel = 371; // Current blood sugar level in mg/dL
-    int targetSugarLevel = 120; // Target blood sugar level in mg/dL
-    int carbGrams = 40; // Grams of carbohydrates
+    int currentSugarLevel = 245; // Current blood sugar level in mg/dL
+    int targetSugarLevel = 110; // Target blood sugar level in mg/dL
+    int carbGrams = 45; // Grams of carbohydrates
 
     // Calculate insulin dose for carbohydrates
     int insulinCarbs = carbGrams / ICR;
