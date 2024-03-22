@@ -15,7 +15,7 @@ mnist = tf.keras.datasets.mnist
 # model.add(tf.keras.layers.Dense(10, activation = 'softmax'))
 # # Compile the model
 # model.compile(optimizer=r'adam', loss=r'sparse_categorical_crossentropy', metrics=[r'accuracy'])
-# model.fit(x_train, y_train, epochs=100)
+# model.fit(x_train, y_train, epochs=50)
 # model.save('model.keras')
 
 
