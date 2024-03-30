@@ -12,17 +12,14 @@ body{
 }
 
 .viewport_display{
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(255, 179, 179);
   height: 20rem;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .play_container{
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
@@ -36,7 +33,7 @@ body{
 }
 
 .obstacle{
-  min-width: 40px;
+  max-width: 40px;
   min-height: 40px;
   background-color: red;
   position: relative;
