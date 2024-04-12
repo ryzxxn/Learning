@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function wakeup() {
-    console.log('Executing function...');
+    console.log('Calling API...');
     try {
         // Ping the first endpoint
         const response1 = await axios.get('https://pixel-websocket.onrender.com/pixel-wake');
