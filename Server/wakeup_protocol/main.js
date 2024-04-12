@@ -2,17 +2,13 @@ const axios = require('axios');
 
 async function wakeup() {
     console.log('Calling API...');
-    try {
         // Ping the first endpoint
-        const response1 = await axios.get('https://pixel-websocket.onrender.com/pixel-wake');
-        console.log('Response from https://pixel-websocket.onrender.com/pixel-wake:', response1.data);
+        const response1 = await axios.get('https://pixel-io.onrender.com/pixel-wake');
+        console.log('Response from https://pixel-io.onrender.com/pixel-wake:', response1.data);
 
         // Ping the second endpoint
         const response2 = await axios.get('https://upload-io.onrender.com/pis-wake');
         console.log('Response from https://upload-io.onrender.com/pis-wake:', response2.data);
-    } catch (error) {
-        console.error('Error:', error.message);
-    }
 }
 
 // Define the interval in milliseconds (14 minutes = 840000 milliseconds)
