@@ -7,8 +7,8 @@ async function wakeup() {
         console.log('Response from https://pixel-io.onrender.com/pixel-wake:', response1.data);
 
         // Ping the second endpoint
-        const response2 = await axios.get('https://upload-io.onrender.com/pis-wake');
-        console.log('Response from https://upload-io.onrender.com/pis-wake:', response2.data);
+        const response2 = await axios.get('https://pis-bucket.onrender.com/pis-wake');
+        console.log('Response from https://pis-bucket.onrender.com/pis-wake:', response2.data);
 }
 
 // Define the interval in milliseconds (14 minutes = 840000 milliseconds)
