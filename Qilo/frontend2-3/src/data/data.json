@@ -24,23 +24,23 @@
       {
         "week": 4,
         "average_temperature": 23.1,
-        "average_rainfall": 10.4,
+        "average_rainfall": 12.4,
         "average_humidity": 61.2,
-        "current_temperature": 25
+        "current_temperature": 22
       },
       {
         "week": 5,
-        "average_temperature": 23.1,
+        "average_temperature": 25.1,
         "average_rainfall": 10.4,
-        "average_humidity": 61.2,
+        "average_humidity": 62.2,
         "current_temperature": 25
       },
       {
         "week": 6,
-        "average_temperature": 23.1,
-        "average_rainfall": 10.4,
-        "average_humidity": 61.2,
-        "current_temperature": 25
+        "average_temperature": 23.8,
+        "average_rainfall": 13.4,
+        "average_humidity": 60.2,
+        "current_temperature": 23
       }
     ],
     "current_conditions": {
