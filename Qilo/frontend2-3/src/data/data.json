@@ -41,6 +41,13 @@
         "average_rainfall": 13.4,
         "average_humidity": 60.2,
         "current_temperature": 23
+      },
+      {
+        "week": 7,
+        "average_temperature": 20.8,
+        "average_rainfall": 2,
+        "average_humidity": 63.2,
+        "current_temperature": 33
       }
     ],
     "current_conditions": {
