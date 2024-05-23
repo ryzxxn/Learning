@@ -1,0 +1,49 @@
+{
+    "weekly_data": [
+      {
+        "week": 1,
+        "average_temperature": 21.6,
+        "average_rainfall": 9.1,
+        "average_humidity": 59.1,
+        "current_temperature": 24
+      },
+      {
+        "week": 2,
+        "average_temperature": 22.3,
+        "average_rainfall": 12.5,
+        "average_humidity": 60.3,
+        "current_temperature": 23
+      },
+      {
+        "week": 3,
+        "average_temperature": 20.9,
+        "average_rainfall": 8.7,
+        "average_humidity": 58.5,
+        "current_temperature": 22
+      },
+      {
+        "week": 4,
+        "average_temperature": 23.1,
+        "average_rainfall": 10.4,
+        "average_humidity": 61.2,
+        "current_temperature": 25
+      },
+      {
+        "week": 5,
+        "average_temperature": 23.1,
+        "average_rainfall": 10.4,
+        "average_humidity": 61.2,
+        "current_temperature": 25
+      },
+      {
+        "week": 6,
+        "average_temperature": 23.1,
+        "average_rainfall": 10.4,
+        "average_humidity": 61.2,
+        "current_temperature": 25
+      }
+    ],
+    "current_conditions": {
+      "temperature": 24
+    }
+  }
