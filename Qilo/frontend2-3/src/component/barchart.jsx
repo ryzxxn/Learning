@@ -12,14 +12,15 @@ export default function Barchart() {
       )
 
       setData(result.data.weekly_data)
-      console.log(result.data.weekly_data);
+      // console.log(result.data.weekly_data);
     }
 
     fetchData()
   }, [])
 
   return (
-    <div style={{ width: '100%', height: 400 }}>
+    <div style={{color: 'white', fontSize: '1.5rem'}}>
+      <p style={{padding: '0rem 1rem'}}>Average Temprature Previous weeks</p>
       <VictoryChart
         domainPadding={{ x: 30, y: 30 }}
         padding={{ top: 0, bottom: 0, left: 0, right: 0 }}
@@ -27,9 +28,8 @@ export default function Barchart() {
         <VictoryAxis
           tickValues={data.map(d => "week "+d.week)}
           style={{
-            axis: { stroke: "none" },
             ticks: { stroke: "none", size: 0 },
-            tickLabels: { fontSize: 16, fill: "grey", padding: 10 }
+            tickLabels: { fontSize: 14, fill: "white", padding: 10 }
           }}
         />
 

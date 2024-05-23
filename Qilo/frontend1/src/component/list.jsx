@@ -45,7 +45,7 @@ export default function List() {
                                     onTap={() => animateItem(index)}
                                     style={{backgroundColor: 'transparent', color: 'white', borderRadius: '.2rem', padding: '.3rem .5rem', display: 'flex', alignItems: 'center', gap: '.5rem', margin: '0rem 0rem', border: '3px solid white'}}>
                                     {item}
-                                    <MdDelete onClick={() => Pop(item)} />
+                                    <MdDelete className="hover_button" onClick={() => Pop(item.id)} />
                                 </motion.div>
                             );
                         }

@@ -21,6 +21,36 @@
   gap: 1rem;
 }
 
+.inset_shadow{
+  box-shadow: 0px 0px .5rem #F45C43 inset;
+  border-radius: .4rem;
+  padding: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  width: 100%;
+  flex: .5;
+}
+
+.input_field{
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F45C43;
+}
+
+.hover_button{
+  color: white;
+  transition: 100ms;
+  min-width: 2rem;
+}
+
+.hover_button:hover{
+  transform: scale(1.4);
+  transition: 100ms;
+}
+
 @media only screen and (max-width: 400px) {
   .card_container{
     display: flex;
