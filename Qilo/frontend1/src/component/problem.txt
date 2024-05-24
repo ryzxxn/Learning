@@ -1,0 +1,6 @@
+Q1) The application must have following features
+A list of element having random text
+Each element can be deleted
+A new element of given text can be added
+Your name, maid id, phone number must be at the top of page
+Add some styling.
