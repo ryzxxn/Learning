@@ -5,7 +5,7 @@ async function getPublicUrl() {
   let publicUrl = response.data.tunnels[0].public_url;
   publicUrl = publicUrl.replace('tcp://', '');
 
-  const webhookUrl = 'https://discord.com/api/webhooks/1151473677364379658/a1fsyU8zTLeS_GlcrQ46F2GVIeeGH3Mbw1GBKIpKkFWaPHFipm3sSQz-Da5QNR9NfqvN';
+  const webhookUrl = 'https://discord.com/api/webhooks/1250170103107162144/F4YmLnwf2MCPYwEPTLY0j6tpxZTLaS2HSbs5dHqK-gwwP7qBZyj3jD29nVx0-cWNvOYd';
   const message = {
     content: `Ngrok tunnel URL: ${publicUrl}`
   };
