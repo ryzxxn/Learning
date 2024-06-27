@@ -13,8 +13,8 @@ def crc_division(data, divisor):
 
 def crc_check(data, divisor, received):
     crc = crc_division(data, divisor)
-    received_crc = crc_division(received[:-len(crc)], divisor)
-    return '1' not in received_crc
+    received_crc = received[-len(crc):]
+    return crc == received_crc
 
 data = input("Enter message: ")
 divisor = input("Enter divisor: ")
